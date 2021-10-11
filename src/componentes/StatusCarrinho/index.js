@@ -1,5 +1,5 @@
 import React from 'react';
-import { View , Text} from 'react-native';
+import { View , Text, Button, Alert} from 'react-native';
 import Botao from '../Botao'
 import estilos from './estilos'
 
@@ -16,7 +16,7 @@ export default function StatusCarrinho({total}){
             </Text>
         </View>
         <View style = {estilos.botao}>
-            <Botao style = {estilos.botao} valor = 'Concluir Pedido' invertido = 'true' acao = {() => {}}/>
+            <Botao style = {estilos.botao} valor = 'Concluir Pedido' invertido = 'true' acao = {()=>alert('Pedido confirmado no total de = ' + total)}/>
         </View>
     </View>
 }

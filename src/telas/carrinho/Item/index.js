@@ -20,7 +20,7 @@ export default function Item({nome, preco, descricao, quantidade: quantidadeInic
     }
 
     return <>
-    <View> style = {estilos.informacao}
+    <View>
         <Text style = {estilos.nome} >{nome}</Text>
         <Text style = {estilos.descricao}>{descricao}</Text>
         <Text style = {estilos.preco} >{
@@ -43,7 +43,7 @@ export default function Item({nome, preco, descricao, quantidade: quantidadeInic
                 style: 'currency', currency: 'BRL'
             }).format(total)} </Text>
             </View>
-                <Botao valor = "Remover do Carrinho" acao = {() => {}}/>
+                <Botao valor = "Remover do Carrinho" acao = {() => calculaTotal(0)}/>
 
         </View>
     </View>

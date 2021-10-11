@@ -13,14 +13,14 @@ const servicos = [
         nome: "Banho",
         preco: 79.9,
         descricao: "Realizamos a higiene completa do seu pet",
-        quantidade: 1
+        quantidade: 0
     },
     {
         id:2,
         nome: "Vacina v4",
         preco: 179.9,
         descricao: "Himunize seu pet de várias doenças.",
-        quantidade: 2
+        quantidade: 0
 
     },
     {
@@ -28,7 +28,7 @@ const servicos = [
         nome: "Vacina Antirrábica",
         preco: 89.9,
         descricao: "Vacina contra raiva.",
-        quantidade: 1
+        quantidade: 0
 
     },
 ]
